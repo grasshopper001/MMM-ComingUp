@@ -5,11 +5,11 @@ var path=require("path");
 
 module.exports=NodeHelper.create({
     defaults:{
-        postURL:"http://127.0.0.1:3000/posts"
+        postURL:"http://47.96.26.134:3001/posts"
     },
     getPosts:function(callback){
         request({
-            url:"http://127.0.0.1:3000/posts",
+            url:"http://47.96.26.134:3001/posts",
             json:true
         },(err,res,body)=>{
             //console.log(body);
